@@ -56,7 +56,7 @@ def validate_obis(value):
 
 def validate_baud_rate(value):
     if value > 0:
-        baud_rates = [300, 600, 1200, 2400, 4800, 9600, 19200]
+        baud_rates = [300, 9600]
         if value not in baud_rates:
             raise cv.Invalid(f"Non standard baud rate {value}. Use one of {baud_rates}")
 
